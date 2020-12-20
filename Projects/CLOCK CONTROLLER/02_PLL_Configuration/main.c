@@ -91,7 +91,7 @@ int main(void)
        system_stm32f0xx.c file
      */
   ConfigureGPIO();
-  SysTick_Config(48000); /* 1ms config */
+  SysTick_Config(48000); /* 1ms config  (from core_cm0.h) */
   while (Counter != 0) // Wait for Counter reset by SysTick IRQ
   {
   }
